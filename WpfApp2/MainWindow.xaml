@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Warehouse Location Problem Solver" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Margin="10" Text="{Binding ResultText}" TextChanged="TextBox_TextChanged" />
+
+        <Button Grid.Row="1" Margin="10,10,457,10" Content="Solve wl__16__1" Command="{Binding SolveCommand}" Click="Button_Click_2"  />
+        <Button Grid.Row="1" Margin="457,10,0,10" Content="Solve wl__500__3" Command="{Binding SolveCommand}" Click="Button_Click_4" HorizontalAlignment="Left" Width="133" />
+        <Button Grid.Row="1" Margin="230,10,222,10" Content="Solve wl__200__2" Command="{Binding SolveCommand}" Click="Button_Click_3" RenderTransformOrigin="0.321,0.55" />
+    </Grid>
+</Window>
